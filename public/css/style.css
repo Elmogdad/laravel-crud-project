@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+}
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--light-color);
+}
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.product-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: white;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.product-image {
+    height: 200px;
+    object-fit: cover;
+}
+.product-price {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.section-title {
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* page products */
+
+.card {
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* Page offers */
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #777;
+}
+.new-price {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+.offer-timer {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
